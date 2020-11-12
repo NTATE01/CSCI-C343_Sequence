@@ -1,3 +1,11 @@
+/*
+ _ _    _  _________
+| \ \  | ||___   ___|
+| |\ \ | |    | |      Nathan Tate, 
+| | \ \| |    | |      IU Southeast, 2023
+| |  \ \ |    | |      https://github.com/ntate01
+|_|   \__|    |_|
+*/
 #pragma once
 #include "Sequence.h"
 #include <iostream>
@@ -89,7 +97,6 @@ void Sequence<T>::remove(T& x, int pos) {
     }//else
 }// remove
 
-
 template <class T>
 T& Sequence<T>::entry(int pos) {
     if (pos < 0 || pos >= size) {
@@ -105,33 +112,30 @@ T& Sequence<T>::entry(int pos) {
     }// else
 }// entry
 
-
 template <class T>
 int Sequence<T>::length(void) {
     return size;
 }// length 
 
-
 template <class T>
 void Sequence <T> ::outputSequence(void) {
     if (size == 0) {
         cout << "Sequence is Empty\n";
-        return;
     }//if 
     else {
-    	NodeRecord* current = head;
+        NodeRecord* current = head;
         cout << "[";
-    	while (current != NULL) {
+        while (current != NULL) {
             if(current->next == NULL){
                 cout << current->value;
                 current = current->next;
             }
             else{
-                cout << current->value;
-                cout << "-";
-                current = current->next;
-            }
+            cout << current->value;
+            cout << ", ";
+            current = current->next;
+            }// else
         }// while
-    }// else
     cout << "]";
-}// outputSentence
+    }// else
+}// outputSequence

@@ -1,8 +1,24 @@
-// PROGRAM OUTPUT IS BELOW MAIN METHOD !!!!
+#pragma once
+#include "Sequence.hpp"
 #include <iostream>
-#include <cstdio>
 using namespace std;
+int main()
+{
+    Sequence<int> seq;
+    int x = 1;
+    int y = 2;
+    int z = 3; 
 
+    seq.add(x, 0);
+    seq.outputSequence();
+    cout<<"\n";
+    cout <<"seq after add x\n";
+    seq.add(y,1);
+    cout <<"seq after add y\n";
+    seq.outputSequence();
+    return 0;
+} //main
+/*
 template <class T>
 class Sequence
 {
@@ -49,7 +65,7 @@ public:
     //! restores self
     //! ensures: self = #self
     
-    void moveItemsFromS1ToS2 (Sequence& s1, Sequence& s2);
+    void moveItemsFromS1ToS2(Sequence& s1, Sequence& s2);
     //! updates s1
     //! replaces s2
     //! ensures: all items in #s1 located in even numbered positions
@@ -57,7 +73,7 @@ public:
     //!          The items remaining in s1 & s2 are in the same order
     //!          as they were in #s1 & #s2. Consider index 0 to be even.
 
-    void split (int pos, Sequence& receivingS);
+    void split(int pos, Sequence& receivingS);
      //! updates self
      //! restores pos
      //! replaces receivingS
@@ -213,20 +229,4 @@ void Sequence<T>:: moveItemsFromS1ToS2(Sequence& s1, Sequence& s2){
     }// for
 }// moveItemsFromS1ToS2
 //----------- main function for Sequence class---------------------------
-
-int main()
-{
-    Sequence<int> seq;
-    int x = 1;
-    int y = 2;
-    int z = 3; 
-
-    seq.add(x, 0);
-    seq.outputSequence();
-    cout<<"\n";
-    cout <<"seq after add x\n";
-    seq.add(y,1);
-    cout <<"seq after add y\n";
-    seq.outputSequence();
-    return 0;
-} //main
+*/

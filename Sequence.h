@@ -51,7 +51,7 @@ public:
     //! clears source
     //! ensures: self = #source
 
-    Sequence& revSeq(void);
+    void reverse(Sequence& s);
     // updates: self
     // ensures: self = rev(self)
     // requires: self != <>
