@@ -1,3 +1,11 @@
+/*
+ _ _    _  _________
+| \ \  | ||___   ___|
+| |\ \ | |    | |      Nathan Tate, 
+| | \ \| |    | |      IU Southeast, Class of 2023
+| |  \ \ |    | |      https://github.com/ntate01
+|_|   \__|    |_|
+*/
 #pragma once
 #include "Sequence.hpp"
 #include <iostream>

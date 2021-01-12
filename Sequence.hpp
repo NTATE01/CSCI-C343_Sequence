@@ -2,7 +2,7 @@
  _ _    _  _________
 | \ \  | ||___   ___|
 | |\ \ | |    | |      Nathan Tate, 
-| | \ \| |    | |      IU Southeast, 2023
+| | \ \| |    | |      IU Southeast, Class of 2023
 | |  \ \ |    | |      https://github.com/ntate01
 |_|   \__|    |_|
 */
